@@ -24,10 +24,10 @@ body {
 
 /* Typography */
 h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-h2 { font-size: 2rem; margin-bottom: 1rem; }
+h2 { font-size: 2rem;   margin-bottom: 1rem; }
 h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 p  { margin-bottom: 1rem; }
-ul { list-style: none; }
+ul { list-style: none;  }
 
 /* Header & Nav */
 .site-header {
@@ -116,11 +116,11 @@ ul { list-style: none; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
 
-  /* Layout tweaks for consistent button placement */
+  /* layout tweaks for consistent button placement */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px; /* adjust to taste */
+  min-height: 350px; /* adjust as needed */
 }
 
 /* Tighten spacing between plan name and price */
@@ -134,13 +134,18 @@ ul { list-style: none; }
   margin: 0.5rem 0 1rem;
 }
 
-/* Center the feature list equidistant between price and button */
+/* Center the feature list equally between price and button */
 .pricing-grid .plan ul {
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* keep the list itself narrow and neat */
   max-width: 220px;
   padding: 0;
+  margin: 0 auto;
 }
 
 /* CTA Section */
