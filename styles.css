@@ -115,14 +115,30 @@ ul { list-style: none; }
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+
+  /* layout tweaks */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px; /* tweak to your preferred card height */
+  min-height: 350px; /* tweak as needed */
 }
+
+/* NEW: tighten name→price spacing */
+.pricing-grid .plan h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* already-existing price styling, kept for reference */
 .plan .price {
   font-size: 1.5rem;
   margin: 0.5rem 0 1rem;
+}
+
+/* NEW: center features text between price & button */
+.pricing-grid .plan ul {
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  max-width: 220px; /* optional */
 }
 
 /* CTA Section */
